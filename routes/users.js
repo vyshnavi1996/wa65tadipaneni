@@ -1,11 +1,10 @@
-var express = require('express')
+var express = require('express');
 var router = express.Router();
-var number=0
+ var value=0 
 /* GET users listing. */
-router.get('/', function(req, res, next) {​​​​​​​​
-number+=1;
-res.send(`User accesses are: ${​​​​​​​​number}​​​​​​​​`);
-}​​​​​​​​);
+router.get('/', function(req, res, next) {
+  value+=1;
+  res.send(`User accesses are: ${value}`);
+});
+ 
 module.exports = router;
-
-
